@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 process.stdout.isTTY = true;
-
-const main = require('./lib/main.js');
 const colors = require('colors');
 
 colors.setTheme({
@@ -17,4 +15,4 @@ colors.setTheme({
     error: 'red'
 });
 
-main();
+module.exports = require('./lib/main.js');
