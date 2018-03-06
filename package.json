@@ -10,7 +10,7 @@
     "coverage": "nyc report --reporter=text-lcov > coverage.json",
     "lint": "eslint lib test bin index.js",
     "lint:fix": "eslint lib test bin index.js --fix",
-    "lint:watch": "npm run lint && onchange lib/*.js test/*.js index.js -- npm run lint",
+    "lint:watch": "npm run lint && onchange lib/*.js test/*.js ./index.js -- npm run lint",
     "precommit": "lint-staged",
     "prepush": "npm test",
     "build": "babel --presets es2017 lib -d bin"

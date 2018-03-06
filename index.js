@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-if ('function' !== typeof Map) throw new Error("ES6 is required; add --harmony");
 process.stdout.isTTY = true;
 
-import { main } from './lib/main.mjs';
-import colors from 'colors';
+const main = require('./lib/main.js');
+const colors = require('colors');
 
 colors.setTheme({
     silly: 'rainbow',
