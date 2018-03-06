@@ -1,3 +1,10 @@
+<a name="1.0.1"></a>
+## <small>1.0.1 (2018-03-06)</small>
+
+* [DEL] remove console ouput ([da163b5](https://github.com/sfabrizio/copyfy/commit/da163b5))
+
+
+
 <a name="1.0.0"></a>
 ## 1.0.0 (2018-03-06)
 
@@ -10,6 +17,7 @@
 * [REF] move all code to ES6 class ([07d5961](https://github.com/sfabrizio/copyfy/commit/07d5961))
 * [REF] remove eperimental nodejs es6 modules ([3f53fd8](https://github.com/sfabrizio/copyfy/commit/3f53fd8))
 * [REF] utilities methods, now they work as expected ([029c972](https://github.com/sfabrizio/copyfy/commit/029c972))
+* 1.0.0 ([52b6aac](https://github.com/sfabrizio/copyfy/commit/52b6aac))
 
 
 
