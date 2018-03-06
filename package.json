@@ -1,6 +1,6 @@
 {
   "name": "copyfy",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Copy files/folders recursively on nodejs using a json as config.",
   "main": "index.js",
   "scripts": {
