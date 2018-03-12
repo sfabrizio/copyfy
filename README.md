@@ -22,6 +22,10 @@ const config = {
         {
             source: "path2",
             target: "path3",
+            renameTargetFiles: {
+                from: new RegExp('fileName', 'g'),
+                to: 'newFileName'
+            }
         }
     ]
 };
