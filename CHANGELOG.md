@@ -1,7 +1,20 @@
+<a name="1.1.0"></a>
+## 1.1.0 (2018-03-12)
+
+* [ADD] copy: renameTargetFiles config options ([1f151ea](https://github.com/sfabrizio/copyfy/commit/1f151ea))
+* [ADD] verbose && showErrors options ([f1b3eb1](https://github.com/sfabrizio/copyfy/commit/f1b3eb1))
+* [MOD] readme update ([8382f4e](https://github.com/sfabrizio/copyfy/commit/8382f4e))
+* [MOD] readme update ([f3efbb1](https://github.com/sfabrizio/copyfy/commit/f3efbb1))
+* [MOD] utils rename: s\ensureDirectoryExistence\ensureDirectoryExistenceSync ([f6c2812](https://github.com/sfabrizio/copyfy/commit/f6c2812))
+* [REF] copy start: now return a promise ([dc5494f](https://github.com/sfabrizio/copyfy/commit/dc5494f))
+
+
+
 <a name="1.0.1"></a>
 ## <small>1.0.1 (2018-03-06)</small>
 
 * [DEL] remove console ouput ([da163b5](https://github.com/sfabrizio/copyfy/commit/da163b5))
+* 1.0.1 ([729b803](https://github.com/sfabrizio/copyfy/commit/729b803))
 
 
 
