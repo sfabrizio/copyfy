@@ -1,6 +1,6 @@
 # copyfy
 
-Copy files inside folders recursively on nodejs using a json as config.
+Copy folders & files recursively on nodejs using a json as config.
 
 ## Install
 ```
@@ -11,10 +11,10 @@ npm install --save-dev copyfy
 ## How to use it:
 
 ```javascript
-const copyfy = require('copyfy');
-const copy = new copyfy();
-
+const Copyfy = require('copyfy');
 const config = {
+    verbose: false,
+    showErrors: false,
     copy: [{
             source: "path1",
             target: "path2",
@@ -23,11 +23,13 @@ const config = {
             source: "path2",
             target: "path3",
         }
-        ...
     ]
 };
+const copy = new Copyfy(config);
 
-copy(config).start();
+copy().start().then(
+    console.log('Done');
+);
 
 ```
 
