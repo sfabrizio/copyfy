@@ -20,6 +20,10 @@ const config = {
             target: "path2",
         },
         {
+            source: "path1/file1.txt",
+            target: "path1/anotherPath/NewFile.txt",
+        },
+        {
             source: "path2",
             target: "path3",
             renameTargetFiles: {
