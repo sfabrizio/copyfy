@@ -1,3 +1,10 @@
+<a name="1.1.1"></a>
+## <small>1.1.1 (2018-03-21)</small>
+
+* [FIX] Copy individuals files by config ([5e195e8](https://github.com/sfabrizio/copyfy/commit/5e195e8))
+
+
+
 <a name="1.1.0"></a>
 ## 1.1.0 (2018-03-12)
 
@@ -7,6 +14,7 @@
 * [MOD] readme update ([f3efbb1](https://github.com/sfabrizio/copyfy/commit/f3efbb1))
 * [MOD] utils rename: s\ensureDirectoryExistence\ensureDirectoryExistenceSync ([f6c2812](https://github.com/sfabrizio/copyfy/commit/f6c2812))
 * [REF] copy start: now return a promise ([dc5494f](https://github.com/sfabrizio/copyfy/commit/dc5494f))
+* 1.1.0 ([b35f26c](https://github.com/sfabrizio/copyfy/commit/b35f26c))
 
 
 
