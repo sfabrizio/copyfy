@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node --harmony --experimental-modules index.mjs",
-    "test": "jasmine-node --verbose --captureExceptions test",
-    "test:watch": "npm test & onchange lib/*.js test/* -- npm test",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll --coverage",
     "coverage": "nyc report --reporter=text-lcov > coverage.json",
     "lint": "eslint lib test bin index.js",
     "lint:fix": "eslint lib test bin index.js --fix",
@@ -20,7 +20,7 @@
   "devDependencies": {
     "eslint": "^4.0.0",
     "husky": "^0.15.0-rc.13",
-    "jasmine-node": "^1.14.5",
+    "jest": "^22.4.3",
     "lint-staged": "^4.0.0",
     "nyc": "^11.0.2",
     "onchange": "^3.2.1"
