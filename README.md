@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/sfabrizio/copyfy.svg?)](https://travis-ci.org/sfabrizio/copyfy)
 [![codecov](https://codecov.io/gh/sfabrizio/copyfy/branch/master/graph/badge.svg)](https://codecov.io/gh/sfabrizio/copyfy)
 [![npm](https://img.shields.io/npm/v/copyfy.svg?style=flat)](https://www.npmjs.com/package/copyfy)
-[![Turbo Commit](https://img.shields.io/badge/Turbo_Commit-on-3DD1F2.svg)](https://github.com/labs-js/turbo-git/blob/master/CONVENTION.md)
 [![bitHound](https://www.bithound.io/github/sfabrizio/copyfy/badges/score.svg)](https://www.bithound.io/github/sfabrizio/copyfy)
 [![Code Climate](https://codeclimate.com/github/sfabrizio/copyfy/badges/gpa.svg)](https://codeclimate.com/github/sfabrizio/copyfy)
 
