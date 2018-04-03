@@ -11,8 +11,6 @@
     "lint": "eslint lib test bin index.js",
     "lint:fix": "eslint lib test bin index.js --fix",
     "lint:watch": "npm run lint && onchange lib/*.js test/*.js ./index.js -- npm run lint",
-    "precommit": "lint-staged",
-    "prepush": "npm test",
     "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "dependencies": {
@@ -21,7 +19,7 @@
   },
   "devDependencies": {
     "eslint": "^4.0.0",
-    "husky": "^0.13.4",
+    "husky": "^0.15.0-rc.13",
     "jasmine-node": "^1.14.5",
     "lint-staged": "^4.0.0",
     "nyc": "^11.0.2",
@@ -35,6 +33,12 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
   },
   "repository": {
     "type": "git",
