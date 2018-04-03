@@ -7,7 +7,7 @@
     "start": "node --harmony --experimental-modules index.mjs",
     "test": "jest --coverage",
     "test:watch": "jest --watchAll --coverage",
-    "coverage": "nyc report --reporter=text-lcov > coverage.json",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test > coverage.json",
     "lint": "eslint lib test bin index.js",
     "lint:fix": "eslint lib test bin index.js --fix",
     "lint:watch": "npm run lint && onchange lib/*.js test/*.js ./index.js -- npm run lint",
