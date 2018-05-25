@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/copyfy.svg?style=flat)](https://www.npmjs.com/package/copyfy)
 [![bitHound](https://www.bithound.io/github/sfabrizio/copyfy/badges/score.svg)](https://www.bithound.io/github/sfabrizio/copyfy)
 [![Code Climate](https://codeclimate.com/github/sfabrizio/copyfy/badges/gpa.svg)](https://codeclimate.com/github/sfabrizio/copyfy)
+[![Turbo Commit](https://img.shields.io/badge/Turbo_Commit-on-3DD1F2.svg)](https://github.com/labs-js/turbo-git/blob/master/CONVENTION.md)
 
 # copyfy
 
@@ -17,17 +18,13 @@ npm install --save-dev copyfy
 ## How to use it:
 
 ```javascript
-const Copyfy = require('copyfy');
+const copyfy = require('copyfy');
 const config = {
     verbose: false,
     showErrors: false,
     copy: [{
             source: "path1",
             target: "path2",
-        },
-        {
-            source: "path1/file1.txt",
-            target: "path1/anotherPath/NewFile.txt",
         },
         {
             source: "path2",
@@ -39,14 +36,10 @@ const config = {
         }
     ]
 };
-const copy = new Copyfy(config);
+const copy = new copyfy(config);
 
-copy().start().then(
+copy.start().then( () => {
     console.log('Done');
-);
+});
 
 ```
-
-<p align="center">
-  <a href="https://github.com/labs-js/turbo-git/blob/develop/README.md"><img src="https://img.shields.io/badge/Turbo_Commit-on-3DD1F2.svg" alt="Turbo Commit: On"/></a>
-</p>
