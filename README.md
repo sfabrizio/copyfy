@@ -7,11 +7,11 @@
 
 # copyfy
 
-Copy folders & files recursively on nodejs using a json as config.
+Copy folders & files recursively on nodejs using a jsonObj as config. This process is recreating the same folder structure and also allows you to rename target files during the copy.
 
 ## Install
 ```
-npm install --save-dev copyfy
+npm install --save copyfy
 ```
 
 
