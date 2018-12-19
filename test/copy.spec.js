@@ -28,25 +28,25 @@ describe('copy', function () {
         });
     });
     describe('Behaviour', () => {
-        beforeEach(() => {
-            copy = new Copy(mockConfig);
-        });
         describe('start method', () => {
-            beforeEach(() => {
-                mockConfig = {
-                    verbose: false,
-                    showErrors: false,
-                    copy: [{
-                        source: './temp23213213213213',
-                        target: './temp2'
-                    }]
-                };
-            });
-            it('should trow error when the source path does not exist', () => {
-                expect(() => copy.start()).toThrowError('');
-            });
-            it('should trow error when the source path does not exist with the error', () => {
-                expect(() => copy.start()).toThrow(`Source path does not exist: ${mockConfig.copy[0].source}`);
+            describe('should fail', () => {
+                beforeEach(() => {
+                    mockConfig = {
+                        verbose: false,
+                        showErrors: false,
+                        copy: [{
+                            source: './temp23213213213213',
+                            target: './temp2'
+                        }]
+                    };
+                    copy = new Copy(mockConfig);
+                });
+                it('should trow error when the source does not exist', () => {
+                    expect(() => copy.start()).toThrowError('');
+                });
+                it('should trow error when the source does not exist with the error', () => {
+                    expect(() => copy.start()).toThrow(`Source path does not exist: ${mockConfig.copy[0].source}`);
+                });
             });
         });
     });
